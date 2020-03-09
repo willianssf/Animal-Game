@@ -49,3 +49,16 @@ label{
     position: absolute;
     z-index: 1;
 }
+
+.logo{
+    position: relative;
+    width: 200px;
+    padding: 0px;
+    left: 42%;
+background-color: yellow;
+}
+.loco_inicio{
+    position: absolute;
+    padding: 100%;
+    width: 100px;
+}
