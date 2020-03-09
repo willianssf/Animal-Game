@@ -1,0 +1,28 @@
+.header{
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    z-index: 1041;
+    position: fixed;
+    right: 0;
+    left: o;
+    top: 0;
+    box-shadow: 50,50,50,3;
+    box-sizing: border-box;
+}
+.nav{
+    background: #fff;
+    text-align: left;
+    height: 60px;
+    padding-top: 1px;
+    margin-top: 1px;
+    display: block;
+    
+}
