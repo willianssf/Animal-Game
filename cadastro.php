@@ -22,7 +22,7 @@
                 <a href="index.html" class="logoCSS"><img class="logo" src="logo-grande-sorte.png"></a>
             </div>
             <div>
-                <a href="" class="btn_login">login</a>
+                <a href="login.php" class="btn_login">login</a>
                 <a href="cadastro.php" class="btn_cadastrar">Cadastrar</a>
             </div> 
 
