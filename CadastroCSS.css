@@ -1,8 +1,9 @@
 .container{
-    padding-left: 30%;
-    background-color: violet;
+   position: absolute;
+    width: 400px;
+    height: 200px;
+    right: 450px;
 }
-form{
-    
-   
+h1{
+    font-size: x-large;
 }

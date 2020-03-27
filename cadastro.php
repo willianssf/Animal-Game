@@ -29,23 +29,20 @@
         <link rel="stylesheet" type="text/css" href="CadastroCSS.css">
         <div class="container">
             <section>
-                <h1>Cadastro de Usuarios</h1>
-                <hr><br><br>
+                <br><h1>Cadastro de Usuarios</h1><br>
 
                 <form method="post" action="processa.php">
-                    <input type="submit" value="Salvar" class="btn">
-                    <input type="reset" value="Limpar" class="btn">
-                    <br><br>
-
                     Nome <br>
-                    <input type="text" name="nome" class="campo" maxlength="40"required autofocus><br>
+                    <input type="text" name="nome" class="campo" maxlength="40"required autofocus><br><br>
+
                     Email<br>
-                    <input type="email" name="email" class="campo" maxlength="50"required><br>
-                    Profissao<br>
-                    <input type="text" name="profissao" class="campo" maxlength="40"required><br>
+                    <input type="email" name="email" class="campo" maxlength="50"required><br><br>
 
+                    Senha<br>
+                    <input type="password" name="senha" class="campo" maxlength="50"required><br><br>
 
-
+                    <input type="submit" value="Salvar" class="btn"><br><br>
+                   
                 </form>
             </section>
 

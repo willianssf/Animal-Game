@@ -4,9 +4,9 @@ include_once("conectaBD.php");
 
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
-$profissao = filter_input(INPUT_POST, 'profissao', FILTER_SANITIZE_STRING);
+$senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 
-$sql = "INSERT INTO usuarios(nome, email, profissao) VALUES('$nome', '$email', '$profissao')";
+$sql = "INSERT INTO usuarios(nome, email) VALUES('$nome', '$email', '$senha')";
 $salvar = mysqli_query($conn, $sql);
 
 
