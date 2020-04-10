@@ -8,6 +8,8 @@ a{
 }
 body{
     font-family: arial;
+    background: url('../png/Competencia.png')no-repeat;
+    background-size: cover;
 }
 ul{
     list-style: none;

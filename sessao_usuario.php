@@ -21,12 +21,12 @@ mysqli_close($conn);
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Menu.css">
+        <link rel="stylesheet" type="text/css" href="Estilo/Menu.css">
     </head>
     <body>
         <input type="checkbox" id="check">
         <label for="check">
-            <img class="menu_hanburger" src="menu_hanburger.png">
+            <img class="menu_hanburger" src="png/menu_hanburger.png">
         </label>
         <nav>
             <ul>
@@ -37,7 +37,7 @@ mysqli_close($conn);
             </ul>
         </nav>
         <div class="logo_inicio">
-            <a href="sessao_usuario.php" class="logoCSS"><img class="logo" src="logo-grande-sorte.png"></a>
+            <a href="sessao_usuario.php" class="logoCSS"><img class="logo" src="png/logo-grande-sorte.png"></a>
         </div>
         <div>
             <p>Olá <?php echo $dados['nome'] ?></p>
