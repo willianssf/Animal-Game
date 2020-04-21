@@ -128,4 +128,42 @@ p{
     background-color: rgb(87, 70, 240);
 
 }
+.icones{
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding-top: 100px;
+    padding-left: 300px;
+    background: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px, 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.coluna1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.coluna2{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+.coluna3{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+.coluna4{
+    position: absolute;
+    top: 5%;
+    left: 65%;
+}
+.coluna5{
+    position: absolute;
+    top: 5%;
+    left: 85%;
+}
 
