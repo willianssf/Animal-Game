@@ -31,7 +31,8 @@
             <h2>Cadastro</h2>
                 <form method="post" action="processa.php" autocomplete="off">
                    <div class="inputBox">
-                       <input type="text" name="nome" required="">
+                       <input type="text" name="nome" required="autofocus autocomplete="off
+                       readonly onfocus="this.removeAttribute('readonly');">
                        <label>Nome</label>
                    </div>
                    <div class="inputBox">

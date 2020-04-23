@@ -42,6 +42,42 @@ mysqli_close($conn);
         <div>
             <p>Olá <?php echo $dados['nome'] ?></p>
             <a href="logout.php" class="sair">Sair</a>
-        </div>  
+        </div> 
+        <div class="fraseInicioLog">
+            <h2>Escolha um animal e torça!!!</h2>
+        </div>
+        <div class="icones">
+            <ul class="coluna1">
+                <li><img src="bicho/1-Avestruz.PNG" alt=""></li>
+                <li><img src="bicho/6-Cabra.PNG" alt=""></li>
+                <li><img src="bicho/11-Cavalo.PNG" alt=""></li>
+                <li><img src="bicho/16-Leão.PNG" alt=""></li>
+            </ul>
+            <ul class="coluna2">
+                <li><img src="bicho/2-Águia.PNG" alt=""></li>
+                <li><img src="bicho/7-Carneiro.PNG" alt=""></li>
+                <li><img src="bicho/12-Elefante.PNG" alt=""></li>
+                <li><img src="bicho/17-Macaco.PNG" alt=""></li>
+            </ul>
+            <ul class="coluna3">
+                <li><img src="bicho/3-Burro.PNG" alt=""></li>
+                <li><img src="bicho/8-Camelo.PNG" alt=""></li>
+                <li><img src="bicho/13-Galo.PNG" alt=""></li>
+                <li><img src="bicho/18-Porco.PNG" alt=""></li>
+            </ul>
+            <ul class="coluna4">
+                <li><img src="bicho/4-Borboleta.PNG" alt=""></li>
+                <li><img src="bicho/9-Cobra.PNG" alt=""></li>
+                <li><img src="bicho/14-Gato.PNG" alt=""></li>
+                <li><img src="bicho/19-Pavão.PNG" alt=""></li>
+            </ul>
+            <ul class="coluna5">
+                <li><img src="bicho/5-Cachorro.PNG" alt=""></li>
+                <li><img src="bicho/10-Coelho.PNG" alt=""></li>
+                <li><img src="bicho/15-Jacaré.PNG" alt=""></li>
+                <li><img src="bicho/20-Peru.PNG" alt=""></li>
+            </ul>
+            <input type="submit" name="btn-apostar" value="Apostar">
+        </div> 
     </body>
 </html>

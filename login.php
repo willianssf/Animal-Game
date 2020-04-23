@@ -66,7 +66,8 @@ if(isset($_POST['btn-entrar'])){
             <div>
                 <a href="" class="btn_login">login</a>
                 <a href="cadastro.php" class="btn_cadastrar">Cadastrar</a>
-            </div> 
+            </div>
+            
         <?php
             if(!empty($erros)){
                 foreach($erros as $erro){
@@ -80,7 +81,7 @@ if(isset($_POST['btn-entrar'])){
           <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <div class="inputBox">
               <input type="text" name="login" required="">
-              <label>Nome</label>
+              <label>E-mail</label>
             </div>
             <div class="inputBox">
               <input type="password" name="senha" required="autofocus autocomplete="off

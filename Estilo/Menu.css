@@ -53,7 +53,6 @@ label{
 }
 
 .logo_inicio{
-    
     width: 100%;
     height: 80px;
     background-color:rgb(87, 70, 240);
@@ -63,35 +62,39 @@ label{
     position: absolute;
     top: 4px;
     width: 200px;
-    left: 40%;
+    left: 42%;
 }
 .btn_login{
     position: absolute;
     left: 83.5%;
     top: 19px;
-    background-color: #4CAF50; /* Green */
+    background: transparent;
     border: none;
-    border-radius: 20px;
-    color: black;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn_login:hover{
+    background-color: rgb(59, 228, 17);
 }
 .btn_cadastrar{
     position: absolute;
     left: 90%;
     top: 19px;
-    background-color: #4CAF50; /* Green */
+    background: transparent;
     border: none;
-    border-radius: 20px;
-    color: black;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn_cadastrar:hover{
+    background-color: rgb(59, 228, 17);
 }
 .logoCSS{
     position: relative;
@@ -130,40 +133,67 @@ p{
 }
 .icones{
     position: absolute;
-    top: 56%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 400px;
-    padding-top: 100px;
-    padding-left: 300px;
-    background: rgba(0,0,0,0.8);
+    width: 500px;
+    padding: 180px;
+    background: rgba(9, 7, 27, 0.3);
     box-sizing: border-box;
-    box-shadow: 0 15px, 25px rgba(0,0,0,0.5);
+    box-shadow: 0 15px, 25px rgba(226, 68, 68, 0.5);
     border-radius: 10px;
 }
 .coluna1{
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 8%;
+    left: 2%;
 }
 .coluna2{
     position: absolute;
-    top: 5%;
-    left: 25%;
+    top: 8%;
+    left: 21.5%;
 }
 .coluna3{
     position: absolute;
-    top: 5%;
-    left: 45%;
+    top: 8%;
+    left: 41%;
 }
 .coluna4{
     position: absolute;
-    top: 5%;
-    left: 65%;
+    top: 8%;
+    left: 60.5%;
 }
 .coluna5{
     position: absolute;
-    top: 5%;
-    left: 85%;
+    top: 8%;
+    left: 80%;
 }
-
+.fraseInicio{
+    position: absolute;
+    top: 160px;
+    width: 480px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type="submit"]{
+    position: absolute;
+    top: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(59, 228, 17);
+}
+.fraseInicioLog{
+    position: absolute;
+    top: 160px;
+    width: 480px;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
