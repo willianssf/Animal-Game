@@ -22,7 +22,7 @@ mysqli_close($conn);
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="Estilo/Menu.css">
-        
+       
     </head>
     <body>
         <input type="checkbox" id="check">
@@ -49,10 +49,10 @@ mysqli_close($conn);
         </div>
         <div class="icones">
             <ul id="bicho" class="coluna1">
-                <li id="1"><img src="bicho/1-Avestruz.PNG" alt=""></li>
-                <li id="2"><img src="bicho/6-Cabra.PNG" alt=""></li>
-                <li id="3"><img src="bicho/11-Cavalo.PNG" alt=""></li>
-                <li id="4"><img src="bicho/16-Leão.PNG" alt=""></li>
+                <li id="Avestruz"><img src="bicho/1-Avestruz.PNG"></li>
+                <li id="Cabra"><img src="bicho/6-Cabra.PNG" alt=""></li>
+                <li id="Cavalo"><img src="bicho/11-Cavalo.PNG" alt=""></li>
+                <li id="Leão"><img src="bicho/16-Leão.PNG" alt=""></li>
             </ul>
             <ul class="coluna2">
                 <li ><img src="bicho/2-Águia.PNG" alt=""></li>
@@ -78,7 +78,7 @@ mysqli_close($conn);
                 <li><img src="bicho/15-Jacaré.PNG" alt=""></li>
                 <li><img src="bicho/20-Peru.PNG" alt=""></li>
             </ul>
-            <input  type="submit" name="btn-apostar" value="Apostar">
+            <input type="submit" name="btn-apostar" value="Apostar">
         </div> 
         <script src="js.js"></script>
     </body>
