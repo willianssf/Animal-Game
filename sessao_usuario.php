@@ -22,7 +22,7 @@ mysqli_close($conn);
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="Estilo/Menu.css">
-       
+        
     </head>
     <body>
         <input type="checkbox" id="check">
@@ -54,29 +54,29 @@ mysqli_close($conn);
                 <li id="Cavalo"><img src="bicho/11-Cavalo.PNG" alt=""></li>
                 <li id="Leão"><img src="bicho/16-Leão.PNG" alt=""></li>
             </ul>
-            <ul class="coluna2">
-                <li ><img src="bicho/2-Águia.PNG" alt=""></li>
-                <li><img src="bicho/7-Carneiro.PNG" alt=""></li>
-                <li><img src="bicho/12-Elefante.PNG" alt=""></li>
-                <li><img src="bicho/17-Macaco.PNG" alt=""></li>
+            <ul id="bicho" class="coluna2">
+                <li id="Águia"><img src="bicho/2-Águia.PNG" alt=""></li>
+                <li id="Carneiro"><img src="bicho/7-Carneiro.PNG" alt=""></li>
+                <li id="Elefante"><img src="bicho/12-Elefante.PNG" alt=""></li>
+                <li id="Macaco"><img src="bicho/17-Macaco.PNG" alt=""></li>
             </ul>
-            <ul class="coluna3">
-                <li><img src="bicho/3-Burro.PNG" alt=""></li>
-                <li><img src="bicho/8-Camelo.PNG" alt=""></li>
-                <li><img src="bicho/13-Galo.PNG" alt=""></li>
-                <li><img src="bicho/18-Porco.PNG" alt=""></li>
+            <ul id="bicho" class="coluna3">
+                <li id="Burro"><img src="bicho/3-Burro.PNG" alt=""></li>
+                <li id="Camelo"><img src="bicho/8-Camelo.PNG" alt=""></li>
+                <li id="Galo"><img src="bicho/13-Galo.PNG" alt=""></li>
+                <li id="Porco"><img src="bicho/18-Porco.PNG" alt=""></li>
             </ul>
-            <ul class="coluna4">
-                <li><img src="bicho/4-Borboleta.PNG" alt=""></li>
-                <li><img src="bicho/9-Cobra.PNG" alt=""></li>
-                <li><img src="bicho/14-Gato.PNG" alt=""></li>
-                <li><img src="bicho/19-Pavão.PNG" alt=""></li>
+            <ul id="bicho" class="coluna4">
+                <li id="Borboleta"><img src="bicho/4-Borboleta.PNG" alt=""></li>
+                <li id="Cobra"><img src="bicho/9-Cobra.PNG" alt=""></li>
+                <li id="Gato"><img src="bicho/14-Gato.PNG" alt=""></li>
+                <li id="Pavão"><img src="bicho/19-Pavão.PNG" alt=""></li>
             </ul>
-            <ul class="coluna5">
-                <li><img src="bicho/5-Cachorro.PNG" alt=""></li>
-                <li><img src="bicho/10-Coelho.PNG" alt=""></li>
-                <li><img src="bicho/15-Jacaré.PNG" alt=""></li>
-                <li><img src="bicho/20-Peru.PNG" alt=""></li>
+            <ul id="bicho" class="coluna5">
+                <li id="Cachorro"><img src="bicho/5-Cachorro.PNG" alt=""></li>
+                <li id="Coelho"><img src="bicho/10-Coelho.PNG" alt=""></li>
+                <li id="Jacaré"><img src="bicho/15-Jacaré.PNG" alt=""></li>
+                <li id="Peru"><img src="bicho/20-Peru.PNG" alt=""></li>
             </ul>
             <input type="submit" name="btn-apostar" value="Apostar">
         </div> 

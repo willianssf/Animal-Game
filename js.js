@@ -1,4 +1,7 @@
-var el = document.getElementById("bicho");
-el.addEventListener('click', function(e) {
-    alert(e.target.id);
-});
+let x = document.querySelectorAll("#bicho > li");
+
+  x.forEach(y =>{
+      y.addEventListener('click', e=>{
+        alert(e.path[1].id);
+      })
+  })
