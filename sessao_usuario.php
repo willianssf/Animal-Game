@@ -21,7 +21,9 @@ mysqli_close($conn);
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Estilo/Menu.css">
+        <script type="text/javascript" src="cdn/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="cdn/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="cdn/style.css">
         
     </head>
     <body>
@@ -41,7 +43,7 @@ mysqli_close($conn);
             <a href="sessao_usuario.php" class="logoCSS"><img class="logo" src="png/logo-grande-sorte.png"></a>
         </div>
         <div>
-            <p>Olá <?php echo $dados['nome'] ?></p>
+            <p class="Ola">Olá <?php echo $dados['nome'] ?></p>
             <a href="logout.php" class="sair">Sair</a>
         </div> 
         <div class="fraseInicioLog">
@@ -78,8 +80,20 @@ mysqli_close($conn);
                 <li id="Jacaré"><img src="bicho/15-Jacaré.PNG" alt=""></li>
                 <li id="Peru"><img src="bicho/20-Peru.PNG" alt=""></li>
             </ul>
-            <input type="submit" name="btn-apostar" value="Apostar">
+            <div class="jmodal modal">
+                <a class="jmodalfechar modal-fechar" href="">X</a>
+                <p class="conteudoModal">
+                    <script src="js.js"></script>
+                </p>
+                <a class="btn-comprar" href="">Comprar</a>
+                
+            </div>
+            <div class="links">
+                <a class="jmodalabrir link-tu" href="" title="Abrir janela modal">
+                    Apostar
+                </a>
+            </div>
         </div> 
-        <script src="js.js"></script>
+       
     </body>
 </html>
