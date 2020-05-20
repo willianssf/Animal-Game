@@ -17,3 +17,24 @@ $(document).ready(function(){
             return false;
         });
 })
+
+function pegarBicho(){
+
+    let x = document.querySelectorAll("#bicho > li");
+   
+     x.forEach(y =>{
+         y.addEventListener('click', e=>{
+           z = e.path[1].id;
+   
+           var $wrapper = document.querySelector('.conteudoModal'),
+           htmlTemporario = $wrapper.innerHTML,
+           htmlNovo = 'Você escolheu o ';
+   
+           htmlTemporario = htmlNovo+z+", vamos comprar agora!";
+   
+          $wrapper.innerHTML = htmlTemporario;
+         });
+     });
+   }
+   
+ 

@@ -3,7 +3,7 @@
     margin: 0px;
 }
 .modal{
-     display: ;
+     display: none;
     position: fixed;
     width: 60%;
     top: 10%;
@@ -11,7 +11,7 @@
     box-sizing: 30%;
     padding: 20px 50px;
     border: solid 1px #aaa;
-    background-color: rgb(59, 228, 17);
+    background-color: #03a9f4;
     box-shadow: 1px 1px 10px;
 }
 .modal-fechar{
@@ -59,7 +59,7 @@
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
-    background: #03a9f4;
+    background: #3d7726;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -78,6 +78,9 @@ body{
 }
 ul{
     list-style: none;
+}
+li{
+    margin-right: 81%;
 }
 .menu_hanburger{
     width: 42px;

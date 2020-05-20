@@ -51,41 +51,42 @@ mysqli_close($conn);
         </div>
         <div class="icones">
             <ul id="bicho" class="coluna1">
-                <li id="Avestruz"><img src="bicho/1-Avestruz.PNG"></li>
-                <li id="Cabra"><img src="bicho/6-Cabra.PNG" alt=""></li>
-                <li id="Cavalo"><img src="bicho/11-Cavalo.PNG" alt=""></li>
-                <li id="Leão"><img src="bicho/16-Leão.PNG" alt=""></li>
+                <li id="Avestruz"><img src="bicho/1-Avestruz.PNG" width="95" height="72"></li>
+                <li id="Cabra"><img src="bicho/6-Cabra.PNG" width="95" height="72"></li>
+                <li id="Cavalo"><img src="bicho/11-Cavalo.PNG" width="95" height="72"></li>
+                <li id="Leão"><img src="bicho/16-Leão.PNG" width="95" height="72"></li>
             </ul>
             <ul id="bicho" class="coluna2">
-                <li id="Águia"><img src="bicho/2-Águia.PNG" alt=""></li>
-                <li id="Carneiro"><img src="bicho/7-Carneiro.PNG" alt=""></li>
-                <li id="Elefante"><img src="bicho/12-Elefante.PNG" alt=""></li>
-                <li id="Macaco"><img src="bicho/17-Macaco.PNG" alt=""></li>
+                <li id="Águia"><img src="bicho/2-Águia.PNG" width="95" height="72"></li>
+                <li id="Carneiro"><img src="bicho/7-Carneiro.PNG" width="95" height="72"></li>
+                <li id="Elefante"><img src="bicho/12-Elefante.PNG" width="95" height="72"></li>
+                <li id="Macaco"><img src="bicho/17-Macaco.PNG" width="95" height="72"></li>
             </ul>
             <ul id="bicho" class="coluna3">
-                <li id="Burro"><img src="bicho/3-Burro.PNG" alt=""></li>
-                <li id="Camelo"><img src="bicho/8-Camelo.PNG" alt=""></li>
-                <li id="Galo"><img src="bicho/13-Galo.PNG" alt=""></li>
-                <li id="Porco"><img src="bicho/18-Porco.PNG" alt=""></li>
+                <li id="Burro"><img src="bicho/3-Burro.PNG" width="95" height="72"></li>
+                <li id="Camelo"><img src="bicho/8-Camelo.PNG" width="95" height="72"></li>
+                <li id="Galo"><img src="bicho/13-Galo.PNG" width="95" height="72"></li>
+                <li id="Porco"><img src="bicho/18-Porco.PNG" width="95" height="72"></li>
             </ul>
             <ul id="bicho" class="coluna4">
-                <li id="Borboleta"><img src="bicho/4-Borboleta.PNG" alt=""></li>
-                <li id="Cobra"><img src="bicho/9-Cobra.PNG" alt=""></li>
-                <li id="Gato"><img src="bicho/14-Gato.PNG" alt=""></li>
-                <li id="Pavão"><img src="bicho/19-Pavão.PNG" alt=""></li>
+                <li id="Borboleta"><img src="bicho/4-Borboleta.PNG" width="95" height="72"></li>
+                <li id="Cobra"><img src="bicho/9-Cobra.PNG" width="95" height="72"></li>
+                <li id="Gato"><img src="bicho/14-Gato.PNG" width="95" height="72"></li>
+                <li id="Pavão"><img src="bicho/19-Pavão.PNG" width="95" height="72"></li>
             </ul>
             <ul id="bicho" class="coluna5">
-                <li id="Cachorro"><img src="bicho/5-Cachorro.PNG" alt=""></li>
-                <li id="Coelho"><img src="bicho/10-Coelho.PNG" alt=""></li>
-                <li id="Jacaré"><img src="bicho/15-Jacaré.PNG" alt=""></li>
-                <li id="Peru"><img src="bicho/20-Peru.PNG" alt=""></li>
+                <li id="Cachorro"><img src="bicho/5-Cachorro.PNG" width="95" height="72"></li>
+                <li id="Coelho"><img src="bicho/10-Coelho.PNG" width="95" height="72"></li>
+                <li id="Jacaré"><img src="bicho/15-Jacaré.PNG" width="95" height="72"></li>
+                <li id="Peru"><img src="bicho/20-Peru.PNG" width="95" height="72"></li>
             </ul>
             <div class="jmodal modal">
                 <a class="jmodalfechar modal-fechar" href="">X</a>
                 <p class="conteudoModal">
-                    <script src="js.js"></script>
+                    <script >pegarBicho()</script>
+                    
                 </p>
-                <a class="btn-comprar" href="">Comprar</a>
+                <a class="btn-comprar" href="" onsubmit="salvar()">Comprar</a>
                 
             </div>
             <div class="links">
