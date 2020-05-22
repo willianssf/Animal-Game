@@ -81,13 +81,11 @@ mysqli_close($conn);
                 <li id="Peru"><img src="bicho/20-Peru.PNG" width="95" height="72"></li>
             </ul>
             <div class="jmodal modal">
-                <a class="jmodalfechar modal-fechar" href="">X</a>
+                <a class="jmodalfechar modal-fechar"  onClick="history.go(0)">X</a>
                 <p class="conteudoModal">
-                    <script >pegarBicho()</script>
-                    
+                    <script src="js.js"></script>
                 </p>
-                <a class="btn-comprar" href="" onsubmit="salvar()">Comprar</a>
-                
+                <a class="btn-comprar" href="" id="Comprar">Comprar</a>
             </div>
             <div class="links">
                 <a class="jmodalabrir link-tu" href="" title="Abrir janela modal">

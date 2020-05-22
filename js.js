@@ -1,24 +1,30 @@
-function pegarBicho(){
+var x = document.querySelectorAll("#bicho > li");
 
- let x = document.querySelectorAll("#bicho > li");
-
-  x.forEach(y =>{
+    x.forEach(y =>{
       y.addEventListener('click', e=>{
-        z = e.path[1].id;
+        var z = e.path[1].id;
+           console.log(z); 
+           
+           var $wrapper = document.querySelector('.conteudoModal'),
+            htmlTemporario = $wrapper.innerHTML,
+            htmlNovo = 'Você escolheu o ';
+            htmlTemporario = htmlNovo+z+", vamos comprar agora!";
+            $wrapper.innerHTML = htmlTemporario;   
+            
+            var a = document.getElementById("Comprar");
+            a.addEventListener('click', e=>{
+              alert(z);
+            })
+    });
+                         
+});
+      
+     
+            
 
-        var $wrapper = document.querySelector('.conteudoModal'),
-        htmlTemporario = $wrapper.innerHTML,
-        htmlNovo = 'Você escolheu o ';
-
-        htmlTemporario = htmlNovo+z+", vamos comprar agora!";
-
-       $wrapper.innerHTML = htmlTemporario;
-      })
-  })
-}
-
+     
 //guarda no banco o bicho selecionado
-function salvar(){
+/*function salvar(){
 var g = document.querySelector("#bicho > li");
 
   g.forEach(h =>{
@@ -30,4 +36,4 @@ var g = document.querySelector("#bicho > li");
       })
     })
   })
-}
+}*/
