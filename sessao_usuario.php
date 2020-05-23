@@ -23,6 +23,7 @@ mysqli_close($conn);
         <meta charset="utf-8">
         <script type="text/javascript" src="cdn/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="cdn/script.js"></script>
+      
         <link rel="stylesheet" type="text/css" href="cdn/style.css">
         
     </head>
@@ -51,19 +52,19 @@ mysqli_close($conn);
         </div>
         <div class="icones">
             <ul id="bicho" class="coluna1">
-                <li id="Avestruz"><img src="bicho/1-Avestruz.PNG" width="95" height="72"></li>
+                <li id="Avestruz"><img src="bicho/1-Avestruz.PNG" width="95" height="72" ></li>
                 <li id="Cabra"><img src="bicho/6-Cabra.PNG" width="95" height="72"></li>
                 <li id="Cavalo"><img src="bicho/11-Cavalo.PNG" width="95" height="72"></li>
                 <li id="Leão"><img src="bicho/16-Leão.PNG" width="95" height="72"></li>
             </ul>
             <ul id="bicho" class="coluna2">
-                <li id="Águia"><img src="bicho/2-Águia.PNG" width="95" height="72"></li>
+                <li id="Águia"><img src="bicho/2-Águia.PNG" width="95" height="72" ></li>
                 <li id="Carneiro"><img src="bicho/7-Carneiro.PNG" width="95" height="72"></li>
                 <li id="Elefante"><img src="bicho/12-Elefante.PNG" width="95" height="72"></li>
                 <li id="Macaco"><img src="bicho/17-Macaco.PNG" width="95" height="72"></li>
             </ul>
             <ul id="bicho" class="coluna3">
-                <li id="Burro"><img src="bicho/3-Burro.PNG" width="95" height="72"></li>
+                <li id="Burro"><img src="bicho/3-Burro.PNG" width="95" height="72" onClick=""></li>
                 <li id="Camelo"><img src="bicho/8-Camelo.PNG" width="95" height="72"></li>
                 <li id="Galo"><img src="bicho/13-Galo.PNG" width="95" height="72"></li>
                 <li id="Porco"><img src="bicho/18-Porco.PNG" width="95" height="72"></li>
@@ -83,16 +84,15 @@ mysqli_close($conn);
             <div class="jmodal modal">
                 <a class="jmodalfechar modal-fechar"  onClick="history.go(0)">X</a>
                 <p class="conteudoModal">
-                    <script src="js.js"></script>
+                    <script> pegaBicho() </script>
                 </p>
                 <a class="btn-comprar" href="" id="Comprar">Comprar</a>
             </div>
             <div class="links">
-                <a class="jmodalabrir link-tu" href="" title="Abrir janela modal">
+                <a class="jmodalabrir link-tu" href="" title="Abrir janela modal" id="Apostar">
                     Apostar
                 </a>
             </div>
         </div> 
-       
     </body>
 </html>

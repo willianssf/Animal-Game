@@ -1,25 +1,19 @@
-var x = document.querySelectorAll("#bicho > li");
+function pegaBicho(){
+var bicho = document.querySelectorAll("#bicho > li");
 
-    x.forEach(y =>{
-      y.addEventListener('click', e=>{
+    bicho.forEach(y =>{
+      y.addEventListener('click', function(e){
         var z = e.path[1].id;
-           console.log(z); 
-           
-           var $wrapper = document.querySelector('.conteudoModal'),
-            htmlTemporario = $wrapper.innerHTML,
-            htmlNovo = 'Você escolheu o ';
-            htmlTemporario = htmlNovo+z+", vamos comprar agora!";
-            $wrapper.innerHTML = htmlTemporario;   
-            
-            var a = document.getElementById("Comprar");
-            a.addEventListener('click', e=>{
-              alert(z);
-            })
-    });
-                         
-});
-      
-     
+        console.log(z);
+        z.text();
+      });                    
+  });
+}
+
+
+
+
+    
             
 
      
@@ -36,4 +30,18 @@ var g = document.querySelector("#bicho > li");
       })
     })
   })
-}*/
+}
+*/
+function text(){
+var $wrapper = document.querySelector('.conteudoModal'),
+            htmlTemporario = $wrapper.innerHTML,
+            htmlNovo = 'Você escolheu o ';
+            htmlTemporario = htmlNovo+z+", vamos comprar agora!";
+            $wrapper.innerHTML = htmlTemporario;   
+            
+            //var a = document.getElementById("Comprar");
+           // a.addEventListener('click', e=>{
+             // e = z;
+             // alert(e);
+            //})
+}

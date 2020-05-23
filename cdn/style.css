@@ -13,7 +13,6 @@
     border: solid 1px #aaa;
     background-color: #03a9f4;
     box-shadow: 1px 1px 10px;
-    
 }
 .modal-fechar{
     position: absolute;
@@ -24,14 +23,12 @@
     background-color: #990000;
     color: #fff;
     font-family: sans-serif;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .modal-fechar:hover{
     transition: 0.2s;
     background-color: #bf3a3a;
     cursor: pointer;
-
 }
 .links:hover{
     transform: ;
@@ -84,6 +81,10 @@ ul{
 }
 li{
     margin-right: 81%;
+}
+li:hover{
+    
+    cursor: pointer;
 }
 .menu_hanburger{
     width: 42px;

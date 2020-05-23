@@ -10,8 +10,6 @@ $senha = md5($senha);
 $sql = "INSERT INTO usuarios(nome, email, senha) VALUES('$nome', '$email', '$senha')";
 $salvar = mysqli_query($conn, $sql);
 
-
-
 if(mysqli_insert_id($conn)){
 	$_SESSION["msg"] = "<p style='color:green'>Usuario cadastrado com sucesso<p>";
 	header("location: sessao_usuario.php");
@@ -21,5 +19,4 @@ if(mysqli_insert_id($conn)){
 	header("location: index.hmtl");
 }
 mysqli_close($conn);
-
 ?>
