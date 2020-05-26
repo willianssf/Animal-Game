@@ -23,6 +23,7 @@ mysqli_close($conn);
         <meta charset="utf-8">
         <script type="text/javascript" src="cdn/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="cdn/script.js"></script>
+        
       
         <link rel="stylesheet" type="text/css" href="cdn/style.css">
         
@@ -86,12 +87,14 @@ mysqli_close($conn);
                 <p class="conteudoModal">
                     <script> pegaBicho() </script>
                 </p>
-                <a class="btn-comprar" href="" id="Comprar">Comprar</a>
+                <input type="button" class="btn-comprar" id="Comprar" value="Comprar">
+                    
             </div>
             <div class="links">
                 <a class="jmodalabrir link-tu" href="" title="Abrir janela modal" id="Apostar">
                     Apostar
                 </a>
+                <p type="hidden" id="mensagens"></p>
             </div>
         </div> 
     </body>

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
         //variaveis locais
         var _seletorLinkAbrir = $(".jmodalabrir");
         var _seletorLinkClose = $(".jmodalfechar");
@@ -15,8 +14,9 @@ $(document).ready(function(){
         _seletorLinkClose.click(function(){
             _containerModal.fadeToggle(0);
             return false;
+        })
         });
-})
+    
 //Seleciona o bicho pretendido
 function pegaBicho(){
     var bicho = document.querySelectorAll("#bicho > li");
@@ -38,12 +38,27 @@ function pegaBicho(){
                     $(this).val(_values);
                 });
             });
-            var x = e.path[1].id;
-            text(x);
-            compraBicho(x);
-             }  
-         });
-    }                    
+           var x = e.path[1].id;
+           text(x);
+
+           $("#Comprar").click(function(){
+               $.ajax({
+                    url:'cadastra.php',
+                    type:'POST',
+                    data:{
+                        bicho:$(x).val()
+                    },
+                        success: function(data){
+                            console.log(data);
+                        },
+                        error: function(data){
+                            console.log("Erro no cadastro")
+                        }
+                })
+           })
+         }  
+    })
+}                    
 //Mensagem de confirmação de compra
      function text(bicho){
         var $wrapper = document.querySelector('.conteudoModal'),
@@ -52,20 +67,3 @@ function pegaBicho(){
         htmlTemporario = htmlNovo+bicho+", vamos comprar agora!";
         $wrapper.innerHTML = htmlTemporario;   
     }
-//Salva no banco
-    function compraBicho(c){
-        var f = document.getElementById("Comprar");
-            f.onclick = function(){
-                cadastro.transaction(function(armazenar){
-                    armazenar.executeSql("INSERT INTO usuarios (bicho) VALUES (?)",[c]);
-                })
-            }
-    }
- 
-    
-   
-
-
-   
-
-
