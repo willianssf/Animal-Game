@@ -1,5 +1,6 @@
 <?php
 
+//realiza o cadastro de novo cliente
 include_once("conectaBD.php");
 
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
@@ -16,7 +17,7 @@ if(mysqli_insert_id($conn)){
 
 }else{
 	$_SESSION["msg"] = "<p style='color:red'>Usuario não cadastrado<p>";
-	header("location: index.hmtl");
+	header("location: index.html");
 }
 mysqli_close($conn);
 ?>

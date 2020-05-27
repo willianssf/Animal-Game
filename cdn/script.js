@@ -39,23 +39,28 @@ function pegaBicho(){
                 });
             });
            var x = e.path[1].id;
+           
            text(x);
 
-           $("#Comprar").click(function(){
+//Envia o bicho para cadastra.php e atualiza a pagina
+           var a = document.getElementById("Comprar");
+           a.addEventListener('click', function(){
                $.ajax({
-                    url:'cadastra.php',
-                    type:'POST',
+                    url:'cdn/cadastra.php',
+                    method:'POST',                    
+                    dataType: 'html',
                     data:{
-                        bicho:$(x).val()
+                        bicho:x
                     },
                         success: function(data){
-                            console.log(data);
+                            //console.log(data)
+                           document.location.reload(true);
                         },
                         error: function(data){
                             console.log("Erro no cadastro")
                         }
                 })
-           })
+            })    
          }  
     })
 }                    
@@ -66,4 +71,4 @@ function pegaBicho(){
         htmlNovo = 'Você escolheu o ';
         htmlTemporario = htmlNovo+bicho+", vamos comprar agora!";
         $wrapper.innerHTML = htmlTemporario;   
-    }
+    }    

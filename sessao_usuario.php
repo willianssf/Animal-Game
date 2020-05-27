@@ -23,8 +23,6 @@ mysqli_close($conn);
         <meta charset="utf-8">
         <script type="text/javascript" src="cdn/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="cdn/script.js"></script>
-        
-      
         <link rel="stylesheet" type="text/css" href="cdn/style.css">
         
     </head>
