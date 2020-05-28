@@ -14,7 +14,6 @@ $dados = mysqli_fetch_array($resultado);
 
 $nom = $dados['nome'];
 
-
 $sql = "UPDATE usuarios SET bicho = '$bicho' WHERE nome = '$nom'";
 $salvar = mysqli_query($conn, $sql);
 

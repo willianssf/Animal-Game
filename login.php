@@ -20,16 +20,27 @@ if(isset($_POST['btn-entrar'])){
 
       if(mysqli_num_rows($resultado) > 0){
         $senha = md5($senha);
-        $sql = "SELECT * FROM usuarios WHERE email = '$login' AND senha = '$senha'";
+        $sql = "SELECT * FROM usuarios WHERE email = '$login' AND senha = '$senha' AND nivel = 'admin'";
+        $sql2 = "SELECT * FROM usuarios WHERE email = '$login' AND senha = '$senha' AND nivel = 'usuario'";
         $resultado = mysqli_query($conn, $sql);
+        $resultado2 = mysqli_query($conn, $sql2);
+
 
           if(mysqli_num_rows($resultado) == 1){
             $dados = mysqli_fetch_array($resultado);
             mysqli_close($conn);
             $_SESSION['logado'] = true;
             $_SESSION['id_usuario'] = $dados['id'];
+            header('location: admin/admin.php');
+          }
+          elseif(mysqli_num_rows($resultado2) == 1){
+            $dados = mysqli_fetch_array($resultado2);
+            mysqli_close($conn);
+            $_SESSION['logado'] = true;
+            $_SESSION['id_usuario'] = $dados['id'];
             header('location: sessao_usuario.php');
           }
+
           else{
             $erros[] = "<li>Usuario e senha nao conferem</li>";
           }

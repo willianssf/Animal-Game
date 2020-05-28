@@ -23,7 +23,7 @@ mysqli_close($conn);
         <meta charset="utf-8">
         <script type="text/javascript" src="cdn/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="cdn/script.js"></script>
-        <link rel="stylesheet" type="text/css" href="cdn/style.css">
+        <link rel="stylesheet" type="text/css" href="estilo/styleCDN.css">
         
     </head>
     <body>
@@ -92,7 +92,6 @@ mysqli_close($conn);
                 <a class="jmodalabrir link-tu" href="" title="Abrir janela modal" id="Apostar">
                     Apostar
                 </a>
-                <p type="hidden" id="mensagens"></p>
             </div>
         </div> 
     </body>

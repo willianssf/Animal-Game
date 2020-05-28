@@ -39,7 +39,6 @@ function pegaBicho(){
                 });
             });
            var x = e.path[1].id;
-           
            text(x);
 
 //Envia o bicho para cadastra.php e atualiza a pagina
