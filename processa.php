@@ -8,7 +8,7 @@ $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 $senha = md5($senha);
 
-$sql = "INSERT INTO usuarios(nome, email, senha) VALUES('$nome', '$email', '$senha')";
+$sql = "INSERT INTO usuarios(nome, email, senha, nivel) VALUES('$nome', '$email', '$senha', 'usuario')";
 $salvar = mysqli_query($conn, $sql);
 
 if(mysqli_insert_id($conn)){
