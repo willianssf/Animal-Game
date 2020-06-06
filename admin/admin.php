@@ -43,7 +43,7 @@ mysqli_close($conn);
             <a href="admin.php" class="logoCSS"><img class="logo" src="../png/logo-grande-sorte.png"></a>
         </div>
         <div>
-            <p class="Ola">Olá <?php echo $dados['nome'] ?></p>
+            <p class="Ola">Olá <?php echo $dados['nivel'] ?></p>
             <a href="../logout.php" class="sair">Sair</a>
         </div> 
         <div>
