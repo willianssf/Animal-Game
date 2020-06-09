@@ -48,9 +48,7 @@ mysqli_close($conn);
         </div> 
         <div>
             <input type="submit" id="geraBicho" value="Gerar" onclick="gerar()">
-            
-          
-            
+           <p id="mensagem"></p>
         </div>
         
         </div> 

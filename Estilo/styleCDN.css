@@ -30,9 +30,6 @@
     background-color: #bf3a3a;
     cursor: pointer;
 }
-.links:hover{
-    transform: ;
-}
 .link-tu{
     position: absolute;
     left: 43%;
@@ -269,6 +266,16 @@ input[type="submit"]:hover{
 }
 #geraBicho{
     position: absolute;
-    top: 42%;
-    left: 43%;
+    top: 30%;
+    left: 46%;
 }
+#mensagem{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    text-align: center;
+    padding: 40px;
+   
+    background-color: #03a9f4;
+}
+

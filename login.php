@@ -25,7 +25,6 @@ if(isset($_POST['btn-entrar'])){
         $resultado = mysqli_query($conn, $sql);
         $resultado2 = mysqli_query($conn, $sql2);
 
-
           if(mysqli_num_rows($resultado) == 1){
             $dados = mysqli_fetch_array($resultado);
             mysqli_close($conn);

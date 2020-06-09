@@ -1,22 +1,19 @@
 <?php
 //pega o bicho do sorteio.js e busca no banco os sorteados
-include_once('../conectaBD.php');
-
-session_start();
+require_once '../conectaBD.php';
 
 $bicho = $_POST['bicho'];
 
 $sql = "SELECT * FROM usuarios WHERE bicho = '$bicho'";
 $resultado = mysqli_query($conn, $sql);
 
-if(mysqli_num_rows($resultado) == 1){
-    $dados = mysqli_fetch_array($resultado);
-    $nom = $dados['nome'];
-    echo $nom;
+
+  while ($dados = $resultado->fetch_array()) 
+  { 
+        echo $dados['nome']."<br />"."\n"; 
   }
-  else{
-      echo "Ninguem acertou";
-  }
+
+  
 
 mysqli_close($conn);
 ?>
