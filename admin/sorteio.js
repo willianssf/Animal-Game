@@ -1,14 +1,14 @@
 function gerar(){
 
+    //escolha aleatoria do animal para o sorteio
     var meuArray = [
         'Avestruz'
     ];
     var Rand = meuArray[(Math.random() * meuArray.length) | 0];
+    alert("O animal sorteado foi "+"\n"+ Rand);
 
-    alert(Rand);
-
+    //envia o bicho para coleta_bicho.php e imprimi na modal os ganhadores
     $(document).ready(function(){
-
         $.ajax({
             url:'coleta_bicho.php',
             method:'POST',                    
@@ -17,8 +17,16 @@ function gerar(){
                 bicho: Rand
             },
             success: function(data){
-                $("#mensagem").html(data);
+                $("#gerar").attr("disabled", true);
+                $("#sorteados").html(data);
+            },
+            error: function(){
+                alert("Ninguem acertou!");
             }
-        })
-    })
+        });
+    //Atualiza a pagina com o botao "Continuar"
+   // $("#save_reset").click(function(){
+      //  document.location.reload(true);
+    });
+    
 }

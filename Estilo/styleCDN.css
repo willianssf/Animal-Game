@@ -3,7 +3,7 @@
     margin: 0px;
 }
 .modal{
-     display: none;
+    display: none;
     position: fixed;
     width: 60%;
     top: 10%;
@@ -264,18 +264,102 @@ input[type="submit"]:hover{
     left: 55%;
     transform: translate(-50%, -50%);
 }
-#geraBicho{
-    position: absolute;
-    top: 30%;
-    left: 46%;
-}
-#mensagem{
-    position: absolute;
-    top: 40%;
-    left: 42%;
-    text-align: center;
-    padding: 40px;
-   
-    background-color: #03a9f4;
-}
 
+/* janela modal admin.php*/
+.window{
+    display:none;
+    width:40%;
+    height:50%;
+    position:absolute;
+    left:0;
+    top:0;
+    background: url('../png/trevo.png')no-repeat;
+    background-size: 16%;
+    background-color: #03a9f4;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+.fechar{
+    position: absolute;
+    display:block; 
+    text-align:right;
+    box-sizing: border-box;
+    border-top-right-radius: 5px;
+    padding: 3px 11px;
+    top: 0;
+    right: 0;
+    background-color: #990000;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.fechar:hover{
+    transition: 0.2s;
+    background-color: #bf3a3a;
+    cursor: pointer;
+}
+#começarSorteio{
+    position: absolute;
+    left: 43%;
+    top: 20%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 1px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#começarSorteio:hover{
+    border-radius: 5px;
+    transform: scale(1.05);   
+}
+#começarSorteioJanela{
+    background: #03a9f4;
+}
+#gerar{
+    position: absolute;
+    text-align:center;
+    border-radius: 3px;
+    padding: 4px 12px;
+    top: 10%;
+    right: 45%;
+    background-color: #03a9f4;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+#gerar:hover{
+    border-radius: 5px;
+    transform: scale(1.05);   
+}
+#sorteados{
+    position: absolute;
+    top: 25%;
+}
+#save_reset{
+    position: absolute;
+    text-align:center;
+    border-radius: 3px;
+    padding: 4px 12px;
+    top: 89%;
+    right: 41%;
+    background-color: #03a9f4;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+#save_reset:hover{
+    border-radius: 5px;
+    transform: scale(1.05);
+}

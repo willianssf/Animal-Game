@@ -23,6 +23,7 @@ mysqli_close($conn);
         <meta charset="utf-8">
         <script type="text/javascript" src="../cdn/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="sorteio.js"></script>
+        <script type="text/javascript" src="janelaModal.js"></script>
         <link rel="stylesheet" type="text/css" href="../estilo/styleCDN.css">
         
     </head>
@@ -34,7 +35,6 @@ mysqli_close($conn);
         <nav>
             <ul>
                 <li><a href="admin.php">home</a></li>
-                <li><a href="">Últimos Sorteios</a></li>
                 <li><a href="">Contatos</a></li>
                 <li><a href="">Sobre</a></li>
             </ul>
@@ -46,11 +46,20 @@ mysqli_close($conn);
             <p class="Ola">Olá <?php echo $dados['nivel'] ?></p>
             <a href="../logout.php" class="sair">Sair</a>
         </div> 
-        <div>
-            <input type="submit" id="geraBicho" value="Gerar" onclick="gerar()">
-           <p id="mensagem"></p>
+        <div id="começarSorteio">
+             <a href="#janela1" rel="modal" id="começarSorteioJanela">Começar sorteio</a>
+        </div> 
+
+        <!--Janela modal para gerar o sorteio-->
+        <div class="window" id="janela1">
+            <a href="#" class="fechar">X</a>
+               <input type="button" value="gerar" id="gerar" onclick="gerar()">
+               <p id="sorteados"></p>
+               <input type="button" value="Continuar" id="save_reset">
         </div>
-        
+
+        <!-- mascara para cobrir o site --> 
+        <div id="mascara"></div>
         </div> 
     </body>
 </html>
