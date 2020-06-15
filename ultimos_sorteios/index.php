@@ -7,35 +7,38 @@ session_start();
 
 //Verificação
 if(!isset($_SESSION['logado'])){
-    header('location: ../index.html');
+    header('location: index.html');
 }
-$listagem = "SELECT * FROM data_sorteio";
-$lista = mysqli_query($conn, $listagem);
+//$dt_sorteio = "SELECT data_sorteio_srt FROM data_sorteio";
+//$resultado_sorteio = mysqli_query($conn, $dt_sorteio);
+//$dados1 = mysqli_fetch_array($resultado_sorteio);
 
 //Dados
 $id = $_SESSION['id_usuario'];
 $sql = "SELECT * FROM usuarios WHERE id = '$id'";
 $resultado = mysqli_query($conn, $sql);
 $dados = mysqli_fetch_array($resultado);
-//mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Ultimos Sorteios</title>
         <meta charset="utf-8">
+        <script type="text/javascript" src="../cdn/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" type="text/css" href="../estilo/styleCDN.css">
-        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <input type="checkbox" id="check">
         <label for="check">
             <img class="menu_hanburger" src="../png/menu_hanburger.png">
         </label>
-        <nav>
-            <ul>
-                <li><a href="../sessao_usuario.php">home</a></li>
-                <li><a href="">Contatos</a></li>
-                <li><a href="">Sobre</a></li>
+        <nav id="menu_nav">
+            <ul id="menu_ul">
+                <li id="menu_li"><a href="../sessao_usuario.php">home</a></li>
+                <li id="menu_li"><a href="">Contatos</a></li>
+                <li id="menu_li"><a href="">Sobre</a></li>
             </ul>
         </nav>
         <div class="logo_inicio">
@@ -44,22 +47,27 @@ $dados = mysqli_fetch_array($resultado);
         <div>
             <p class="Ola">Olá <?php echo $dados['nome'] ?></p>
             <a href="../logout.php" class="sair">Sair</a>
-        </div> 
-
-        <!-- Busca na tabela as datas de sorteio -->
-        <div>
-            <form>
-            <ul id="tabela_srt_ul">
-                <?php
-                    while($resultado_consulta = mysqli_fetch_assoc($lista)){
-                        echo "<li id='tabela_srt_li'>".$resultado_consulta['data_srt']."</li><br>";
-                    }      
-                ?> 
-            </ul>
-            </form>
         </div>
-        
-        
-           
-    </body>
-</html>
+        <div>
+        <label id="escolhaData">
+            <h2>Data dos ultimos jogo.</h2>
+        </label>
+            <select name="" id="selectData">
+            <option value="">--Escolha uma data--</option>
+                 <?php 
+                 $select = "SELECT * FROM data_sorteio ORDER BY data_sorteio_srt ASC";
+                 $resultado2 = mysqli_query($conn, $select);
+                 foreach ($resultado2 as $datas): 
+                 ?>
+                    <option value="" id="o"><?php echo $datas['data_sorteio_srt'];?></option>
+                 <?php 
+                    endforeach; 
+                    mysqli_close($conn);
+                 ?>
+            </select>
+            <div id="ganhadores">
+                <ul id="srt" ></ul>
+            </div>
+        </div>
+</body>
+</html> 

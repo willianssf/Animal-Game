@@ -14,21 +14,18 @@ if(mysqli_num_rows($resultado) != 0){
         echo $dados['nome']."<br />"."\n"; 
 
       //salva na tabela sorteio
-       // $nome = $dados['nome'];
-       // $animal = $dados['bicho'];
+       $nome = $dados['nome'];
+       $animal = $dados['bicho'];
 
-       // $sql2 = "INSERT INTO sorteios(data_sorteio, nome, bicho) VALUES('$data', '$nome', '$animal')";
-       //$salvar = mysqli_query($conn, $sql2);
-
-       
+       $sql2 = "INSERT INTO sorteios(data_srt, nome, bicho) VALUES('$data', '$nome', '$animal')";
+       $salva = mysqli_query($conn, $sql2);
   }
 }
 else{
   echo "Ninguem acertou!";
 }
-
-      $sql2 = "INSERT INTO data_sorteio(data_srt) VALUES('$data')";
-      $salvar = mysqli_query($conn, $sql2);
+      $sql3 = "INSERT INTO data_sorteio(data_sorteio_srt) VALUES('$data')";
+      $salvar = mysqli_query($conn, $sql3);
 
 mysqli_close($conn);
 ?>

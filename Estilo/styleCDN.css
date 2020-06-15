@@ -76,30 +76,43 @@ body{
 ul{
     list-style: none;
 }
-li{
-    margin-right: 81%;
-}
-li:hover{
-    
+li:hover{  
     cursor: pointer;
 }
 .menu_hanburger{
     width: 42px;
 }
+#menu_ul{
+    top: 12.5%;
+    list-style:none; 
+    float:left;
+    background-color: rgb(59, 228, 17); 
+}
+#menu_ul #menu_li{
+    position: relative;
+    float:left; 
+}
+#menu_ul #menu_li a{
+    color:#333;
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+}
+#menu_ul #menu_li a:hover{
+    background:rgb(59, 228, 17); 
+    color:#fff; 
+    -box-shadow: 0 3px 10px 0 #CCC; 
+    text-shadow: 0px 0px 5px #fff; 
+    transition: 0.2s;
+}
 input[type="checkbox"]{
     display: none;
 }
-nav{
-    background-color: rgba(236, 173, 79, 0.932);
-    width: 250px;
-    height: 70%;
-    left: -350px;
-    top: 0px;
-    position: absolute;
-    transition: all .5s;
+#menu_nav{
+    display: none;
 }
-input[type="checkbox"]:checked ~ nav{
-    transform: translateX(350px);
+input[type="checkbox"]:checked ~ #menu_nav{
+    display: block;
 }
 ul{
     top: 70px;
@@ -165,8 +178,8 @@ label{
 }
 .logoCSS{
     position: relative;
-    margin-left: 172px;
-    margin-right: 258px;  
+    margin-left: 20%;
+    margin-right: 29%;  
 }
 .logoCSS:hover{
     
@@ -214,26 +227,39 @@ label{
     position: absolute;
     top: 8%;
     left: 2%;
+    list-style: none;
 }
 .coluna2{
     position: absolute;
     top: 8%;
     left: 21.5%;
+    list-style: none;
 }
 .coluna3{
     position: absolute;
     top: 8%;
     left: 41%;
+    list-style: none;
 }
 .coluna4{
     position: absolute;
     top: 8%;
     left: 60.5%;
+    list-style: none;
 }
 .coluna5{
     position: absolute;
     top: 8%;
     left: 80%;
+    list-style: none;
+}
+.bicho_li{
+    width: 19%;
+}
+.bicho_li:hover{
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(0.9);
 }
 .fraseInicio{
     position: absolute;
@@ -275,10 +301,11 @@ input[type="submit"]:hover{
     top:0;
     background: url('../png/trevo.png')no-repeat;
     background-size: 16%;
-    background-color: #03a9f4;
+  
     z-index:9900;
     padding:10px;
     border-radius:10px;
+    background-color: rgba(10,23,55,0.5);
 }
 #mascara{
     display:none;
@@ -345,6 +372,7 @@ input[type="submit"]:hover{
 }
 #sorteados{
     position: absolute;
+    color: white;
     top: 25%;
 }
 #save_reset{

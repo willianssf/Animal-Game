@@ -55,6 +55,7 @@ if(isset($_POST['btn-entrar'])){
   <head>
     <title>Login</title>
     <meta charset="utf-8">
+    
   </head>
   <body>
   <link rel="stylesheet" type="text/css" href="Estilo/Menu.css">
@@ -62,12 +63,11 @@ if(isset($_POST['btn-entrar'])){
             <label for="check">
                 <img class="menu_hanburger" src="png/menu_hanburger.png">
             </label>
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">Últimos Sorteios</a></li>
-                    <li><a href="">Contatos</a></li>
-                    <li><a href="">Sobre</a></li>
+            <nav id="menu_nav">
+              <ul id="menu_ul">
+                    <li id="menu_li"><a href="index.html">home</a></li>
+                    <li id="menu_li"><a href="">Contatos</a></li>
+                    <li id="menu_li"><a href="">Sobre</a></li>
                 </ul>
             </nav>
             <div class="logo_inicio">

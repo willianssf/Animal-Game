@@ -25,8 +25,8 @@ function gerar(){
             }
         });
     //Atualiza a pagina com o botao "Continuar"
-   // $("#save_reset").click(function(){
-      //  document.location.reload(true);
+    $("#save_reset").click(function(){
+        document.location.reload(true);
     });
-    
+    })
 }

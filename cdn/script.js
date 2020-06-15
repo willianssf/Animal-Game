@@ -70,4 +70,4 @@ function pegaBicho(){
         htmlNovo = 'Você escolheu o ';
         htmlTemporario = htmlNovo+bicho+", vamos comprar agora!";
         $wrapper.innerHTML = htmlTemporario;   
-    }    
+    }

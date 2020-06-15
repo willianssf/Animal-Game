@@ -25,18 +25,16 @@ mysqli_close($conn);
         <script type="text/javascript" src="sorteio.js"></script>
         <script type="text/javascript" src="janelaModal.js"></script>
         <link rel="stylesheet" type="text/css" href="../estilo/styleCDN.css">
-        
     </head>
     <body>
         <input type="checkbox" id="check">
         <label for="check">
             <img class="menu_hanburger" src="../png/menu_hanburger.png">
         </label>
-        <nav>
-            <ul>
-                <li><a href="admin.php">home</a></li>
-                <li><a href="">Contatos</a></li>
-                <li><a href="">Sobre</a></li>
+        <nav id="menu_nav">
+            <ul id="menu_ul">
+                <li id="menu_li"><a href="admin.php">home</a></li>
+                <li id="menu_li"><a href="../ultimos_sorteios/index.php">Últimos Sorteios</a></li>
             </ul>
         </nav>
         <div class="logo_inicio">
