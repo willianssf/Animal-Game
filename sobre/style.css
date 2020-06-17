@@ -1,0 +1,41 @@
+#id_sobre{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 18%;
+    left: 28%;
+    background-color: rgba(10,23,55,0.5);
+}
+h3{
+    position: absolute;
+    left: 33.5%;
+    text-align: center;
+    color: white;
+}
+#descricao{
+    position: absolute;
+    top: 8%;
+    color: white;
+    text-align: center;
+    line-height: 150%;
+}
+
+#encontrar{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+ 
+    color: white;
+}
+#contato{
+    position: absolute;
+    top: 85%;
+    color: white;
+    text-align: center;
+}
+#dev{
+    position: absolute;
+    top: 95%;
+    color: white;
+    left: 10%;
+}

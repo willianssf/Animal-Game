@@ -83,7 +83,7 @@ li:hover{
     width: 42px;
 }
 #menu_ul{
-    top: 12.5%;
+    top: 12%;
     list-style:none; 
     float:left;
     background-color: rgb(59, 228, 17); 
@@ -289,6 +289,7 @@ input[type="submit"]:hover{
     width: 480px;
     left: 55%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px rgb(6, 216, 6);
 }
 
 /* janela modal admin.php*/

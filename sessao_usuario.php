@@ -36,8 +36,7 @@ mysqli_close($conn);
             <ul id="menu_ul">
                 <li id="menu_li"><a href="sessao_usuario.php">home</a></li>
                 <li id="menu_li"><a href="ultimos_sorteios/index.php">ultimos sorteios</a></li>
-                <li id="menu_li"><a href="">Contatos</a></li>
-                <li id="menu_li"><a href="">Sobre</a></li>
+                <li id="menu_li"><a href="sobre/sobre.php">Sobre</a></li>
             </ul>
         </nav>
         <div class="logo_inicio">

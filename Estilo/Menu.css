@@ -18,7 +18,7 @@ ul{
     width: 42px;
 }
 #menu_ul{
-    top: 12.5%;
+    top: 12%;
     list-style:none; 
     float:left;
     background-color: rgb(59, 228, 17); 
@@ -204,7 +204,7 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(14, 13, 13);
-    text-shadow: 2px 2px 5px rgb(6, 216, 6)
+    
 }
 input[type="submit"]{
     position: absolute;

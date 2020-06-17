@@ -2,7 +2,7 @@ function gerar(){
 
     //escolha aleatoria do animal para o sorteio
     var meuArray = [
-        'Avestruz'
+        'Avestruz', 'Porco'
     ];
     var Rand = meuArray[(Math.random() * meuArray.length) | 0];
     alert("O animal sorteado foi "+"\n"+ Rand);

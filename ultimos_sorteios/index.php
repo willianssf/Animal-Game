@@ -9,9 +9,6 @@ session_start();
 if(!isset($_SESSION['logado'])){
     header('location: index.html');
 }
-//$dt_sorteio = "SELECT data_sorteio_srt FROM data_sorteio";
-//$resultado_sorteio = mysqli_query($conn, $dt_sorteio);
-//$dados1 = mysqli_fetch_array($resultado_sorteio);
 
 //Dados
 $id = $_SESSION['id_usuario'];
@@ -30,24 +27,26 @@ $dados = mysqli_fetch_array($resultado);
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <img class="menu_hanburger" src="../png/menu_hanburger.png">
-        </label>
-        <nav id="menu_nav">
-            <ul id="menu_ul">
-                <li id="menu_li"><a href="../sessao_usuario.php">home</a></li>
-                <li id="menu_li"><a href="">Contatos</a></li>
-                <li id="menu_li"><a href="">Sobre</a></li>
-            </ul>
-        </nav>
-        <div class="logo_inicio">
-            <a href="../sessao_usuario.php" class="logoCSS"><img class="logo" src="../png/logo-grande-sorte.png"></a>
-        </div>
-        <div>
-            <p class="Ola">Olá <?php echo $dados['nome'] ?></p>
-            <a href="../logout.php" class="sair">Sair</a>
-        </div>
+        
+            <input type="checkbox" id="check">
+            <label for="check">
+                <img class="menu_hanburger" src="../png/menu_hanburger.png">
+            </label>
+            <nav id="menu_nav">
+                <ul id="menu_ul">
+                    <li id="menu_li"><a href="../sessao_usuario.php">home</a></li>
+                    <li id="menu_li"><a href="">Contatos</a></li>
+                    <li id="menu_li"><a href="">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="logo_inicio">
+                <a href="../sessao_usuario.php" class="logoCSS"><img class="logo" src="../png/logo-grande-sorte.png"></a>
+            </div>
+            <div>
+                <p class="Ola">Olá <?php echo $dados['nome'] ?></p>
+                <a href="../logout.php" class="sair">Sair</a>
+            </div>
+        
         <div>
         <label id="escolhaData">
             <h2>Data dos ultimos jogo.</h2>
